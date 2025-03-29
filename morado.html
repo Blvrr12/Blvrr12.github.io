@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Página de Bienvenida</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+<body class="bg-gradient-to-br from-indigo-100 to-blue-100 min-h-screen">
+
+<div class="flex min-h-screen">
+
+  <!-- menu izq -->
+  <aside class="w-1/6 bg-white p-6 flex flex-col border-r border-gray-200">
+    <h1 class="text-2xl font-bold mb-8">edu</h1>
+    <nav class="flex flex-col gap-4 flex-grow">
+      <a href="#" class="flex items-center gap-2 text-white bg-indigo-500 px-4 py-2 rounded-lg">
+        <i class="bi bi-calendar-check"></i> Schedule
+      </a>
+      <a href="#" class="flex items-center gap-2 text-gray-700 hover:text-indigo-500">
+        <i class="bi bi-graph-up"></i> Progress
+      </a>
+      <a href="#" class="flex items-center gap-2 text-gray-700 hover:text-indigo-500">
+        <i class="bi bi-chat-dots"></i> Messages
+      </a>
+      <a href="#" class="flex items-center gap-2 text-gray-700 hover:text-indigo-500">
+        <i class="bi bi-gear"></i> Settings
+      </a>
+    </nav>
+    <a href="" class="mt-auto text-red-500 hover:text-red-600 flex items-center gap-2">
+      <i class="bi bi-box-arrow-left"></i> Log out
+    </a>
+  </aside>
+
+  <main class="w-4/6 p-8 space-y-6">
+
+    <!-- menu -->
+    <section class="relative bg-indigo-900 text-white rounded-2xl p-8 overflow-hidden">
+      <h2 class="text-3xl font-bold">Effective education!</h2>
+      <p class="mt-2">Learning is easy and effective with us. Open the panel and watch your progress and growth in knowledge!</p>
+      </section>
+
+    <!-- Eventos -->
+    <section>
+      <h3 class="font-semibold text-lg mb-2">Events</h3>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <div class="bg-white p-4 rounded-xl shadow text-center">
+          <h4 class="font-bold text-lg">26.02</h4>
+          <p class="text-sm text-gray-500">18:00 – 19:30</p>
+          <p class="mt-2">UX/UI Workshop</p>
+          <span class="inline-block mt-2 px-3 py-1 bg-indigo-500 text-white rounded-full text-sm">+20</span>
+        </div>
+        <div class="bg-white p-4 rounded-xl shadow text-center">
+          <h4 class="font-bold text-lg">02.03</h4>
+          <p class="text-sm text-gray-500">18:00 – 19:30</p>
+          <p class="mt-2">English Lecture</p>
+          <span class="inline-block mt-2 px-3 py-1 bg-green-500 text-white rounded-full text-sm">+12</span>
+        </div>
+        <div class="bg-white p-4 rounded-xl shadow text-center">
+          <h4 class="font-bold text-lg">07.03</h4>
+          <p class="text-sm text-gray-500">18:00 – 19:30</p>
+          <p class="mt-2">Business Lecture</p>
+          <span class="inline-block mt-2 px-3 py-1 bg-blue-500 text-white rounded-full text-sm">+5</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- barras porcentaje -->
+    <section>
+      <h3 class="font-semibold text-lg mb-2">Timing & Progress</h3>
+      <div class="bg-white p-4 rounded-xl shadow space-y-4">
+        <div>
+          <div class="flex justify-between text-sm font-medium text-gray-700 mb-1">
+            <span>Computer Science</span><span>37%</span>
+          </div>
+          <div class="w-full bg-gray-200 rounded-full h-2">
+            <div class="bg-indigo-500 h-2 rounded-full" style="width: 37%"></div>
+          </div>
+        </div>
+        <div>
+          <div class="flex justify-between text-sm font-medium text-gray-700 mb-1">
+            <span>Science</span><span>83%</span>
+          </div>
+          <div class="w-full bg-gray-200 rounded-full h-2">
+            <div class="bg-green-500 h-2 rounded-full" style="width: 83%"></div>
+          </div>
+        </div>
+        <div>
+          <div class="flex justify-between text-sm font-medium text-gray-700 mb-1">
+            <span>Business</span><span>51%</span>
+          </div>
+          <div class="w-full bg-gray-200 rounded-full h-2">
+            <div class="bg-blue-500 h-2 rounded-full" style="width: 51%"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- panel dereecho con perifl y materias -->
+  <aside class="w-1/6 bg-white p-6 border-l border-gray-200">
+    <div class="flex justify-between items-center mb-6">
+      <i class="bi bi-bell text-gray-600 text-xl"></i>
+      <strong class="text-gray-700">Kate G.</strong>
+    </div>
+
+    <h6 class="text-sm font-semibold mb-2">Your Courses</h6>
+    <ul class="space-y-2 mb-6">
+      <li class="flex items-center justify-between bg-gray-50 p-3 rounded-lg text-sm">
+        <div class="flex items-center gap-3">
+          <div class="w-8 h-8 rounded-full bg-black flex items-center justify-center">
+            <i class="bi bi-brush text-white text-sm"></i>
+          </div>
+          <div class="text-gray-800 font-semibold">Art</div>
+        </div>
+        <span class="text-gray-500">35h</span>
+      </li>
+      <li class="flex items-center justify-between bg-gray-50 p-3 rounded-lg text-sm">
+        <div class="flex items-center gap-3">
+          <div class="w-8 h-8 rounded-full bg-black flex items-center justify-center">
+            <i class="bi bi-briefcase text-white text-sm"></i>
+          </div>
+          <div class="text-gray-800 font-semibold">Business</div>
+        </div>
+        <span class="text-gray-500">40h</span>
+      </li>
+      <li class="flex items-center justify-between bg-gray-50 p-3 rounded-lg text-sm">
+        <div class="flex items-center gap-3">
+          <div class="w-8 h-8 rounded-full bg-black flex items-center justify-center">
+            <i class="bi bi-bezier text-white text-sm"></i>
+          </div>
+          <div class="text-gray-800 font-semibold">Science</div>
+        </div>
+        <span class="text-gray-500">25h</span>
+      </li>
+      <li class="flex items-center justify-between bg-gray-50 p-3 rounded-lg text-sm">
+        <div class="flex items-center gap-3">
+          <div class="w-8 h-8 rounded-full bg-black flex items-center justify-center">
+            <i class="bi bi-calculator text-white text-sm"></i>
+          </div>
+          <div class="text-gray-800 font-semibold">Mathematics</div>
+        </div>
+        <span class="text-gray-500">15h</span>
+      </li>
+    </ul>
+
+    <div class="bg-white border border-gray-200 p-4 rounded-xl text-center shadow">
+      <img src="mejorar.jpeg" class="w-16 h-16 mx-auto rounded-full mb-3 object-cover" alt="Upgrade" />
+      <h6 class="font-semibold">Upgrade to Premium</h6>
+      <button class="mt-2 bg-indigo-600 text-white px-4 py-1 rounded-lg text-sm hover:bg-indigo-700">Upgrade</button>
+    </div>
+  </aside>
+</div>
+
+</body>
+</html>
